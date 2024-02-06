@@ -24,4 +24,29 @@ function multipy(num1,num2){
    }
 
    const full=fullName(`Jisan`,788);
-   console.log(full);
+//    console.log(full);
+
+
+function getPrice(product){
+    if( typeof product !==`object`){
+        return `Please Provide an Object`
+    }
+    const price=product.price;
+    return price;
+}
+
+
+const  price=getPrice({name:`chulkani dandy`,price:25,color:`red`});
+console.log(price);
+
+function getSecond(numbers){
+    if (Array.isArray(numbers)===false){
+        return `Please Provide a Array`
+    }
+    // console.log(typeof numbers)
+    const second=numbers[1]
+    return second;
+}
+
+const bta =getSecond(1,2,3,4,5,6);
+console.log(bta);
